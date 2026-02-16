@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500mm"
+   height="500mm"
+   viewBox="0 0 500 500"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="paisagem 1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.26236509"
+     inkscape:cx="714.65301"
+     inkscape:cy="1236.8261"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="1591"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="500"
+       height="500"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#6f85cc;fill-opacity:1;stroke:#000000;stroke-width:0.079375"
+       id="rect3"
+       width="500"
+       height="500"
+       x="0"
+       y="0" />
+    <path
+       style="fill:#2f7128;fill-opacity:1;stroke:none;stroke-width:0.079375"
+       d="m 500,286.40115 c 0,0 -164.18454,32.27055 -279.1484,145.2175 L 500,500"
+       id="path2"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:#347b2c;fill-opacity:1;stroke:none;stroke-width:0.079375"
+       d="m 500,386.23819 c 0,0 -164.69596,-35.48141 -207.53327,-43.89493 C 225.79411,329.24833 14.118368,334.80698 0,334.80698 V 500 h 500 z"
+       id="path1"
+       sodipodi:nodetypes="cscccc" />
+    <ellipse
+       style="fill:#e2e660;fill-opacity:1;stroke:none;stroke-width:0.0873057"
+       id="path3"
+       cx="361.53104"
+       cy="82.689331"
+       rx="57.982185"
+       ry="58.486416" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.079375"
+       d="m 251.00601,155.27431 c 0,0 -10.69628,-33.33673 -32.80193,-26.20588 -0.35654,-1.42617 -4.99159,-46.707085 -50.09423,-21.92737 0,0 -17.82713,-49.737698 -61.14706,-4.9916 l -0.4412,-0.15757 c 0,0 -24.695061,-11.608334 -30.578013,21.19359 0,0 -45.993997,-12.83554 -49.915966,32.08883 z"
+       id="path4"
+       sodipodi:nodetypes="cccscccc" />
+  </g>
+</svg>

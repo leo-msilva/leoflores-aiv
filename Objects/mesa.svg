@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="529.6225"
+   height="188.41089"
+   viewBox="0 0 140.12928 49.850378"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="Objetos\mesa2.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="mesa 1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#9dc4d9"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.74208053"
+     inkscape:cx="526.897"
+     inkscape:cy="394.16207"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="1591"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2"
+     showgrid="false">
+    <inkscape:page
+       x="0"
+       y="3.5305617e-16"
+       width="140.12929"
+       height="49.850376"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Base"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline"
+     transform="translate(-63.100001,-57.250003)">
+    <path
+       id="path7"
+       style="fill:#753a0d;fill-opacity:1;stroke-width:0.652198"
+       inkscape:label="Perna Esq"
+       d="m 71.458687,59.720903 -3.565673,2.139404 c 0.228307,1.255688 0.895477,26.852567 1.345654,45.102673 h 3.501078 l 1.39268,-44.567822 z" />
+    <path
+       id="path14"
+       style="fill:#753a0d;fill-opacity:1;stroke-width:0.652198"
+       inkscape:label="Perna Dir"
+       d="m 198.59408,61.503739 -6.4177,0.534851 1.52291,44.92439 h 3.74912 z" />
+    <path
+       id="rect1"
+       style="fill:#753a0d;fill-opacity:1;stroke-width:0.684347"
+       d="M 63.108044,57.255676 H 203.22929 V 62.7515 H 63.108044 Z"
+       inkscape:label="Tampo" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Luz"
+     style="display:inline;mix-blend-mode:soft-light"
+     transform="translate(-34.131251,-57.150003)">
+    <path
+       id="path12"
+       style="display:none;fill:#a45312;fill-opacity:1;stroke-width:0.652198"
+       inkscape:label="Perna Esq"
+       d="m 39.462708,76.438745 c 1.6e-4,0.0056 3.55e-4,0.0084 5.16e-4,0.01395 l 1.631425,38.952145 -0.380338,8.74882 1.955953,-0.11369 2.106331,-58.041934 -5.635832,0.246496 c 0.09427,2.588717 0.204424,6.129041 0.321945,10.19421 z" />
+    <path
+       id="path10"
+       style="display:none;fill:#a45312;fill-opacity:1;stroke-width:0.652198"
+       inkscape:label="Perna Dir"
+       d="m 169.42945,68.86143 0.0971,-3.86023 -6.19858,0.713135 0.7059,20.833354 1.84743,36.771401 0.44597,1.11414 1.6986,0.093 0.0822,-3.24993 0.0517,-41.986586 z" />
+    <path
+       id="path6"
+       style="display:none;fill:#a45312;stroke-width:0.684347"
+       inkscape:label="Tampo"
+       d="m 34.13125,57.898792 0.965833,3.515547 139.039057,0.244946 -0.49971,-3.32021 -139.50518,-0.93431 z" />
+    <path
+       id="path11"
+       style="opacity:0.236;fill:#000000;fill-opacity:1;stroke-width:0.652198"
+       inkscape:label="S5"
+       d="m 44.979936,65.986897 -1.737173,39.875103 -2.900197,0.14362 -0.07961,0.84622 3.504318,0.0111 1.272867,-40.87631 z"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       id="path3-2"
+       style="opacity:0.283;fill:#000000;fill-opacity:1;stroke-width:0.652198"
+       inkscape:label="S4"
+       d="m 168.48288,106.37407 -2.74645,-0.10876 -0.44597,-1.11414 -1.28018,-18.619218 0.73758,20.341078 3.72998,-0.008 z"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       id="path9"
+       style="opacity:0.306;fill:#000000;fill-opacity:1;stroke-width:0.652198"
+       inkscape:label="S3"
+       d="m 169.64906,62.645789 -6.41676,0.01773 0.0957,3.05082 6.19858,-0.713135 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="path8"
+       style="opacity:0.314;fill:#000000;fill-opacity:1;stroke-width:0.652198"
+       inkscape:label="S2"
+       d="m 45.154123,62.645789 h -6.121754 c 0.04368,0.776923 0.05065,2.012927 0.108394,3.598746 l 5.899382,-0.257865 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="rect1-4"
+       style="opacity:0.143;fill:#000000;fill-opacity:1;stroke-width:0.684347"
+       inkscape:label="S1"
+       d="m 34.13125,57.898792 v 4.746997 h 140.12116 v -0.213424 l -0.11627,-0.77308 -139.039057,-0.244946 z"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       id="path13"
+       style="opacity:0.233;fill:#ffffff;fill-opacity:1;stroke-width:0.652198"
+       inkscape:label="L3"
+       d="m 169.42945,68.86143 -1.26969,10.428304 0.29496,27.710646 z"
+       sodipodi:nodetypes="cccc" />
+    <path
+       id="path2-8"
+       style="opacity:0.333;fill:#ffffff;fill-opacity:1;stroke-width:0.652198"
+       inkscape:label="L2"
+       d="m 40.302059,106.86134 0.380338,-8.748817 -1.219173,-21.659825 c 0.485835,16.808726 0.683543,25.330122 0.802661,30.410712 z"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       id="path5"
+       style="opacity:0.209;fill:#ffffff;fill-opacity:1;stroke-width:0.684347"
+       inkscape:label="L1"
+       d="m 34.13125,57.15 v 0.254765 l 139.50518,0.93431 0.61598,4.09329 V 57.15 Z" />
+  </g>
+</svg>
