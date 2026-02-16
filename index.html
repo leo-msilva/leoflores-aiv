@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            
+            background-color: #b388d7; 
+            
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; 
+            align-items: center;  
+            
+            overflow: hidden;
+
+            
+        }
+
+        #janela-container {
+
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+
+            top: 10vh;
+
+            height: fit-content;
+            width: fit-content;
+            pointer-events: none;
+
+        }
+
+        #janela {
+            position: relative;
+            z-index: 3;
+            height: 45vh;
+            pointer-events: auto;
+            cursor: pointer;
+        }
+
+        #paisagem {
+            position: absolute;
+            height: 38vh;
+            
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        #mesa {
+            width: 100%;
+            height: 30vh; 
+            z-index: 5;
+            flex-shrink: 0;
+        }
+
+        #vaso {
+            position: absolute;
+            margin-bottom: -12vh;
+            height: 12vh;
+            z-index: 17;
+            cursor: pointer;
+            pointer-events: auto;
+        }
+
+        #regador {
+            position: relative;
+            
+            height: 25vh;
+            cursor: grab;
+            pointer-events: auto;
+        }
+
+        #regador-container {
+            
+            position: absolute;
+            /* Isso substitui o bottom:0 e right:0 mantendo ele no mesmo lugar */
+            top: calc(100vh - 25vh); /* 100% da altura menos a altura do regador */
+            left: calc(100vw - 20vw); /* Ajuste o 20vw conforme a largura do seu regador */
+            
+            z-index: 54;
+            pointer-events: none;
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+
+        }
+
+
+
+        #relogio {
+            position: relative;
+            width: 11vw;
+            z-index: 10;
+            
+        }
+        #relogio-container{
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+            width: fit-content;
+            height: fit-content;
+            right: 5vw;
+            top: 5vh;
+
+            cursor: pointer;
+
+            z-index: 12;
+        }
+
+        #relogio-horas {
+            position: absolute;
+            width: 45px;
+            z-index: 15;
+            transform-origin: 15% 50%;
+            left:47%;
+
+
+            
+        }
+        #relogio-minutos {
+            
+            position: absolute;
+            transform-origin: 50% 91%;
+            bottom: 46%;
+            left:47%;
+
+
+            height: 60px;
+            z-index: 16;
+        }
+
+        
+        #plant-container {
+            position: absolute;
+            top: 0;                
+            bottom: 42vh;         
+            
+            left: 50%;             
+            transform: translateX(-50%);
+            
+            width: 200px;         
+            
+            z-index: 20;
+            flex-direction: column;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;  
+
+            pointer-events: none;
+
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        #planta {
+            position: relative;
+            max-width: 100%;
+            height: auto;
+            z-index: 15;
+
+            margin-bottom: -5%;
+            
+
+        }
+
+        .gota {
+            position: absolute;
+            width: 4px;
+            height: 6px;
+            background-color: #5dade2;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 15;
+        }
+
+        .arrastavel {
+            position: absolute; /* Necessário para mover com X e Y */
+            cursor: grab;
+            height: 150px;
+            transition: transform 0.1s linear; /* Limita a velocidade/suaviza o arraste */
+            z-index: 10;
+        }
+        
+        .arrastavel:active {
+            cursor: grabbing;
+            transition: none; /* Remove o delay enquanto arrasta para não "atrasar" o mouse */
+        }
+
+        .retornando {
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efeito Tween "Elastic" */
+        }
+
+        @keyframes oscilar {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(5deg); }
+        75% { transform: rotate(-5deg); }
+        100% { transform: rotate(0deg); }
+        }
+
+        .interagindo {
+        animation: oscilar 0.5s infinite linear;
+        }
+
+        
+
+
+
+
+        #janela-blackout {
+            position: absolute;
+            pointer-events: none;
+            height: 100vh;
+            width: 100vw;
+            z-index: 100;
+            background-color: rgba(0, 0, 0, 0.3);
+            visibility:visible;
+
+            opacity: 0;
+            transition: opacity 1s ease;  
+
+        }
+
+        #advanced-button {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 30px; /* Tamanho da dobra */
+            height: 30px;
+            border: none;
+            background: rgba(0, 0, 0, 0.3); /* Cor da "dobra" */
+            cursor: pointer;
+            z-index: 9999;
+            transition: background 0.3s, transform 0.2s;
+
+            /* Corta a div em formato de triângulo retângulo */
+            /* Pontos: (0,0), (100%,0), (0,100%) */
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+        }
+
+        #advanced-button.active {
+            background: #ff4757; /* Vermelho alerta ao ativar */
+            transform: scale(1.1); /* Leve aumento para feedback visual */
+        }
+
+
+        #semente-container {
+            
+            left: 5%;
+            top: 85%;
+            position: absolute;
+            display: none;
+            justify-content: center;
+            align-items: center;
+
+            height: fit-content;
+            width: fit-content;
+
+            z-index: 54;
+            pointer-events: none;
+
+        }
+
+        #semente {
+            pointer-events: auto;
+
+            height: 10vh;
+            position: relative;
+            
+            
+        }
+
+        #notification {
+            position: fixed;
+            bottom: 10%;      /* Distância do fundo */
+            left: 50%;
+            transform: translateX(-50%); /* Truque para centralizar perfeitamente */
+            
+            background-color: rgba(0, 0, 0, 0); /* Fundo escuro semi-transparente */
+            color: rgb(214, 182, 0);
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-family: 'Segoe UI';
+            font-size: 22px;
+            text-align: center;
+            
+            z-index: 1000;     /* Garante que fique acima de tudo */
+            pointer-events: none; /* O mouse ignora ele (clica no que estiver atrás) */
+            
+            opacity: 0;        /* Começa invisível */
+            transition: opacity 0.4s ease; /* Efeito de fade in/out */
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div id="janela-container">
+        <img id="janela" src="" alt="janelaImg" onclick="janelaInteract()" draggable="false">
+        <img id="paisagem" src="" alt="paisagem" draggable="false">
+    </div>
+    
+    <button id="advanced-button" onclick="ativarModoAvancado()"></button>
+
+    <div id="plant-container">
+        <img id="vaso" src="Objects/vaso_skin0.svg" alt="vaso" onclick="dizerUmidade()" draggable="false">
+        <img id="planta" src="" alt="Planta" draggable="false">
+    </div>
+    
+    <div id="relogio-container" onclick="dizerHoras()">
+        <img id="relogio" src="Objects/relogio_base.svg" alt="relogio" draggable="false">
+        <img id="relogio-horas" src="Objects/relogio_horas.svg" alt="relogio-horas" draggable="false">
+        <img id="relogio-minutos" src="Objects/relogio_minutos.svg" alt="relogio-minutos" draggable="false">
+
+    </div>
+
+    <div id="regador-container">
+        <img id="regador" src="Objects/regador_normal.svg" alt="regador" draggable="false">
+    </div>
+
+    <div id="janela-blackout"></div>
+
+    <div id="semente-container" class="arrastavel">
+        <img id="semente" src="Objects/semente.svg" alt="semente" draggable="false">
+        
+    </div>
+
+    <img id="mesa" src="Objects/mesa.svg" alt="mesa" draggable="false">
+
+    <div id="notification"></div>
+
+    
+<script src="script.js"></script>
+</body>
+</html>
